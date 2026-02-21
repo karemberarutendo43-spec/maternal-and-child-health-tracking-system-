@@ -1,0 +1,17 @@
+{
+  "name": "Maternal & Child Health Tracking System",
+  "short_name": "MCHTS",
+  "start_url": "/mch_system/auth/login.php",
+  "scope": "/mch_system/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/mch_system/public/assets/mchts-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

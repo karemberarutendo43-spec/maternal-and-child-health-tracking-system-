@@ -1,0 +1,9 @@
+**/.git
+**/.vscode
+**/node_modules
+**/.zencoder
+**/.zenflow
+**/.tmp_php_files.csv
+uploads/**
+tmp*.py
+tmp_dbg*.php

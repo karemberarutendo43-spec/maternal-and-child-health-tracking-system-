@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./assets/input.css -o ./assets/output.css --minify",
+    "copy:hosting": "node ./tools/copy_to_firebase_public.js",
+    "build": "npm run build:css && npm run copy:hosting",
+    "dev": "tailwindcss -i ./assets/input.css -o ./assets/output.css --watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.30",
+    "tailwindcss": "^3.4.8"
+  }
+}

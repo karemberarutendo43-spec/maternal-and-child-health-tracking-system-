@@ -1,0 +1,36 @@
+CREATE TABLE IF NOT EXISTS clinics (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  clinic_code VARCHAR(32) NOT NULL UNIQUE,
+  clinic_name VARCHAR(255) NOT NULL,
+  auth_code VARCHAR(64) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO clinics (clinic_code, clinic_name, auth_code) VALUES
+('MC-BAND', 'mc Bandimba Clinic', 'MCBAND-7624'),
+('MC-BVEK', 'mc Bveke Clinic', 'MCBVEK-9182'),
+('MC-CHAW', 'mc Chawanda Clinic', 'MCCHAW-4607'),
+('MC-CHIB', 'mc Chibuli Clinic', 'MCCHIB-3351'),
+('MC-CHIT', 'mc Chitepo Clinic', 'MCCHIT-2049'),
+('MC-CHTS', 'mc Chitse Clinic', 'MCCHTS-5773'),
+('MC-DOTI', 'mc Dotito Rural Health Centre', 'MCDOTI-8604'),
+('MC-KAIT', 'mc Kaitano Clinic', 'MCKAIT-4921'),
+('MC-KAMU', 'mc Kamutsenzere Rural Health Centre', 'MCKAMU-7756'),
+('MC-KAND', 'mc Kandeya clinic', 'MCKAND-1138'),
+('MC-KARA', 'mc Karanda Mission Hospital', 'MCKARA-6482'),
+('MC-MANG', 'mc Mangare Clinic', 'MCMANG-9905'),
+('MC-MATO', 'mc Matope Clinic', 'MCMATO-2471'),
+('MC-MDDH', 'mc Mount Darwin District Hospital', 'MCMDDH-5310'),
+('MC-ZRPC', 'mc Mount Darwin ZRP Clinic', 'MCZRPC-4026'),
+('MC-MUKU', 'mc Mukumbura Clinic', 'MCMUKU-6899'),
+('MC-MURO', 'mc Murongwe Clinic', 'MCMURO-1564'),
+('MC-MUTA', 'mc Mutasa Clinic', 'MCMUTA-7288'),
+('MC-MUTG', 'mc Mutungagore Clinic', 'MCMUTG-8441'),
+('MC-MUTW', 'mc Mutwa Clinic', 'MCMUTW-2987'),
+('MC-NEMB', 'mc Nembire Rural Health Centre', 'MCNEMB-6719'),
+('MC-NYAM', 'mc Nyamahobogo Rural Health Centre', 'MCNYAM-3450'),
+('MC-PACH', 'mc Pachanza Clinic', 'MCPACH-9002'),
+('MC-PFUN', 'mc Pfunyanguwo Rural Health Centre', 'MCPFUN-1127'),
+('MC-PFUR', 'mc Pfura Clinic', 'MCPFUR-5593'),
+('MC-TSAK', 'mc Tsakare Rural Health Centre', 'MCTSAK-7846'),
+('MC-ZPSP', 'mc ZPS Mount Darwin Prison Clinic', 'MCZPSP-6638');

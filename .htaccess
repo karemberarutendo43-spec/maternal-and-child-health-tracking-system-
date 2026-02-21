@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# The app is written as if it lives under /mch_system/.
+# When running on Cloud Run (served at /), Firebase Hosting forwards /mch_system/** here.
+# Strip the prefix so Apache maps to the actual filesystem layout.
+RewriteRule ^mch_system/?$ /index.php [L]
+RewriteRule ^mch_system/(.*)$ /$1 [L]
+
